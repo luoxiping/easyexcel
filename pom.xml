@@ -5,6 +5,7 @@
     <groupId>com.alibaba</groupId>
     <artifactId>easyexcel</artifactId>
     <version>2.2.9</version>
+    <!-- 打包成jar -->
     <packaging>jar</packaging>
     <name>easyexcel</name>
 

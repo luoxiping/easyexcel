@@ -33,4 +33,8 @@ public class TestFileUtil {
     public static File readUserHomeFile(String pathName) {
         return new File(System.getProperty("user.home") + File.separator + pathName);
     }
+
+    public static void main(String[] args) {
+        System.out.println(TestFileUtil.class.getResource("/").getPath());
+    }
 }

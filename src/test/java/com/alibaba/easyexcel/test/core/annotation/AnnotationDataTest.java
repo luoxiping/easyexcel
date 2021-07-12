@@ -36,6 +36,11 @@ public class AnnotationDataTest {
         readAndWrite(file03);
     }
 
+    /**
+     * 读取和写入测试
+     * @param file
+     * @throws Exception
+     */
     private void readAndWrite(File file) throws Exception {
         EasyExcel.write().file(file).head(AnnotationData.class).sheet().doWrite(data());
         EasyExcel.read().file(file).head(AnnotationData.class).registerReadListener(new AnnotationDataListener())
